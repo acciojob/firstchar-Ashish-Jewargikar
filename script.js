@@ -1,6 +1,12 @@
-function firstChar(text) {
+function firstChar(str) {
   // your code here
-	let firstChar = text.charAt(0);
+	for (let i = 0; i < str.length; i++) {
+    if (str[i] !== " ") {
+      return str[i];
+    }
+  }
+  // If the string only contains spaces, return an empty string
+  return "";
 }
 
 // Do not change the code below
